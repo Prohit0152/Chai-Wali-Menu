@@ -3,108 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Card</title>
+    <title>चाय वाली  </title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
         body {
-            background: url('./images/bg.jpg') no-repeat center center/cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: url('./images/bgnew.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
             padding: 20px;
+            color: #fff;
+            margin: 0;
         }
         .menu-container {
-            background: rgba(255, 255, 255, 0.9);
+            max-width: 90%;
+            width: 400px;
+            margin: auto;
+            background: rgba(26, 26, 26, 0.9);
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
         }
-        .menu-title {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 10px;
+        h1 {
+            color: #faf7f7;
+            font-size: 28px;
+            text-shadow: 2px 2px #660000;
+        }
+        h2 {
+            color: #ff3333;
+            font-size: 20px;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            background: linear-gradient(135deg, #660000, #990000);
+            color: #fff;
+            font-size: 16px;
             font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(255, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
         }
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            background: #f8f8f8;
-            transition: 0.3s;
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        li:hover, li.active {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #990000, #cc0000);
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
             cursor: pointer;
         }
-        .menu-item:hover {
-            background: #e94560;
-            color: #fff;
-            transform: scale(1.05);
-        }
-        .menu-item span {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .price {
-            font-size: 18px;
-            color: #e94560;
-        }
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .menu-container {
-                max-width: 90%;
-                box-shadow: none;
-                border: 2px solid #ccc;
-                border-radius: 0;
+                width: 90%;
+                padding: 15px;
             }
-            body {
-                background: url('./images/bg.jpg') no-repeat center center/cover;
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            li {
+                font-size: 14px;
+                padding: 8px;
             }
         }
     </style>
 </head>
 <body>
     <div class="menu-container">
-        <div class="menu-title">Menu Card</div>
-        <h3> <center>Chai || Maggi || Smoking </center></h3>
-        <div class="menu-item">
-            <span>इलायची चाय</span>
-            <!-- <span class="price">₹12</span> -->
-        </div>
-        <div class="menu-item">
-            <span>लेमन चाय</span>
-            <!-- <span class="price">$15</span> -->
-        </div>
-        <div class="menu-item">
-            <span>कॉफी</span>
-            <!-- <span class="price">$18</span> -->
-        </div>
-        <div class="menu-item">
-            <span>सादी चाय</span>
-            <!-- <span class="price">$10</span> -->
-        </div>
-        <div class="menu-item">
-            <span>आदरक् चाय</span>
-            <!-- <span class="price">$8</span> -->
-        </div><hr>
-        <div class="menu-title">Food</div>
-        <div class="menu-item">
-            <span>मैगी</span>
-            <!-- <span class="price">$8</span> -->
-        </div>
-        <div class="menu-item">
-            <span>मसाला मैगी</span>
-            <!-- <span class="price">$8</span> -->
-        </div>
-      
+        <h1>☕ चाय वाली </h1>
+       <h2>🍵 Tea & Beverages</h2>
+        <ul>
+            <li>इलायची चाय</li>
+            <li>लेमन चाय</li>
+            <li>कॉफी</li>
+            <li>सादी चाय</li>
+            <li>आदरक् चाय</li>
+            
+        </ul>
+        
+        <h2>🍟 Snacks</h2>
+        <ul>
+            <li>वेज मैगी </li>
+            <li>मसाला मैगी</li>
+            <li>cheese Maggi</li>
+            <li>Cheese Balls</li>
+        </ul>
+         <!-- <h2>🍕 Main Course</h2>
+        <ul>
+            <li>Margherita Pizza</li>
+            <li>Cheeseburger</li>
+            <li>Pasta Alfredo</li>
+            <li>Greek Salad</li>
+            <li>Chicken Biryani</li>
+            <li>Chocolate Cake</li>
+        </ul> -->
+        
+        
     </div>
+
+    <script>
+        // Add touch support for hover effect
+        document.querySelectorAll("li").forEach(item => {
+            item.addEventListener("touchstart", () => {
+                // Remove active class from all items
+                document.querySelectorAll("li").forEach(li => li.classList.remove("active"));
+                // Add active class to the tapped item
+                item.classList.add("active");
+            });
+        });
+    </script>
 </body>
 </html>
