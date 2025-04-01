@@ -1,149 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>चाय वाली  </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>चाय वाली</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: url('./images/bgnew.jpg') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
-            padding: 20px;
-            color: #fff;
-            margin: 0;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: url("./images/bgnew.jpg") no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        margin: 0;
+      }
+      .menu-container {
+        max-width: 90%;
+        width: 400px;
+        margin: auto;
+        background: rgba(26, 26, 26, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
+      }
+      h1 {
+        color: #faf7f7;
+        font-size: 28px;
+        text-shadow: 2px 2px #660000;
+      }
+      h2 {
+        color: #ff3333;
+        font-size: 20px;
+        margin-top: 20px;
+        text-decoration: underline;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        margin: 5px 0;
+        background: linear-gradient(135deg, #660000, #990000);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(255, 0, 0, 0.3);
+        transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+      }
+      li:hover,
+      li.active {
+        transform: scale(1.05);
+        background: linear-gradient(135deg, #990000, #cc0000);
+        box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+        cursor: pointer;
+      }
+      @media (max-width: 600px) {
         .menu-container {
-            max-width: 90%;
-            width: 400px;
-            margin: auto;
-            background: rgba(26, 26, 26, 0.9);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
+          width: 90%;
+          padding: 15px;
         }
         h1 {
-            color: #faf7f7;
-            font-size: 28px;
-            text-shadow: 2px 2px #660000;
+          font-size: 24px;
         }
         h2 {
-            color: #ff3333;
-            font-size: 20px;
-            margin-top: 20px;
-            text-decoration: underline;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
+          font-size: 18px;
         }
         li {
-            padding: 10px;
-            margin: 5px 0;
-            background: linear-gradient(135deg, #660000, #990000);
-            color: #fff;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(255, 0, 0, 0.3);
-            transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+          font-size: 14px;
+          padding: 8px;
         }
-        li:hover, li.active {
-            transform: scale(1.05);
-            background: linear-gradient(135deg, #990000, #cc0000);
-            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
-            cursor: pointer;
-        }
-        @media (max-width: 600px) {
-            .menu-container {
-                width: 90%;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 18px;
-            }
-            li {
-                font-size: 14px;
-                padding: 8px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="menu-container">
-        <h1>☕ चाय वाली </h1>
-       
-        <ul>
-            <li>Chai</li>
-            <li>Adrak Chai</li>
-            <li>Elaichi Chai</li>
-            <li>Lemon Chai</li>
-            <li>Coffee</li>
-            <li>Black Coffee</li>
-            <li>Green Tea</li>
-            <li>Special Tea</li>
-            <li>Special Coffee</li>
-            <li>Special Green Tea</li>
-            <li>Special Black Coffee</li>   
-        </ul>
-        <h1>🍟 Snacks </h1>
-        
-        <ul>
-            <li>Masala Maggi</li>
-            <li>Veg-Maggi</li>
-            <li>Cheese Maggi</li>
-            <li>Paneer Maggi</li>
-            <li>Butter Maggi</li>
-            <li>Special Maggi</li>
-            <li>Punjabi Maggi</li>
-            <li>Schezwan Maggi</li>
+      <h1>☕ चाय वाली</h1>
 
-        </ul>
-        <h1>🥥🍲South Indian Dishes </h1>
-        <ul>
-            <li>Mung Wada</li>
-            <li>Plain Dosa</li>
-            <li>Paneer Dosa</li>
-            <li>Butter Dosa</li>
-            <li>Special Dosa</li>
-            <li>Idli Sambar</li>
-            <li>Vada Sambar</li>
-            <li>Uttapam</li>
-            <li>Paneer Uttapam</li>
-            <li>Butter Uttapam</li>
-            <li>Special Uttapam</li>
-        </ul>
-        <h1> 🥞Parathas</h1>
-        <ul>
-            <li>Paratha</li>
-            <li>Aloo Paratha</li>
-            <li>Gobi Paratha</li>
-            <li>Paneer Paratha</li>
-            <li>Butter Paratha</li>
-            <li>Special Paratha</li>
-            <li>Paneer Butter Paratha</li>
-            <li>Methi Paratha</li>
-            <li>Onion Paratha</li>
-            <li>Paneer Onion Paratha</li>
-        </ul>
-        
-        
+      <ul>
+        <li>Chai</li>
+        <li>Adrak Chai</li>
+        <li>Elaichi Chai</li>
+        <li>Lemon Chai</li>
+        <li>Coffee</li>
+        <li>Black Coffee</li>
+        <li>Green Tea</li>
+        <li>Special Tea</li>
+        <li>Special Coffee</li>
+        <li>Special Green Tea</li>
+        <li>Special Black Coffee</li>
+      </ul>
+      <h1>🍟 Snacks</h1>
+
+      <ul>
+        <li>Masala Maggi</li>
+        <li>Veg-Maggi</li>
+        <li>Cheese Maggi</li>
+        <li>Paneer Maggi</li>
+        <li>Butter Maggi</li>
+        <li>Special Maggi</li>
+        <li>Punjabi Maggi</li>
+        <li>Schezwan Maggi</li>
+      </ul>
+      <h1>🥥🍲South Indian Dishes</h1>
+      <ul>
+        <li>Mung Wada</li>
+        <li>Plain Dosa</li>
+        <li>Paneer Dosa</li>
+        <li>Butter Dosa</li>
+        <li>Special Dosa</li>
+        <li>Idli Sambar</li>
+        <li>Vada Sambar</li>
+        <li>Uttapam</li>
+        <li>Paneer Uttapam</li>
+        <li>Butter Uttapam</li>
+        <li>Special Uttapam</li>
+      </ul>
+      <h1>🥞Parathas</h1>
+      <ul>
+        <li>Paratha</li>
+        <li>Aloo Paratha</li>
+        <li>Gobi Paratha</li>
+        <li>Paneer Paratha</li>
+        <li>Butter Paratha</li>
+        <li>Special Paratha</li>
+        <li>Paneer Butter Paratha</li>
+        <li>Methi Paratha</li>
+        <li>Onion Paratha</li>
+        <li>Paneer Onion Paratha</li>
+      </ul>
+
+      
     </div>
-
+    <h5><span id="visitor-count">0</span></h5>
     <script>
-        // Add touch support for hover effect
-        document.querySelectorAll("li").forEach(item => {
-            item.addEventListener("touchstart", () => {
-                // Remove active class from all items
-                document.querySelectorAll("li").forEach(li => li.classList.remove("active"));
-                // Add active class to the tapped item
-                item.classList.add("active");
-            });
+      // Add touch support for hover effect
+      document.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("touchstart", () => {
+          // Remove active class from all items
+          document
+            .querySelectorAll("li")
+            .forEach((li) => li.classList.remove("active"));
+          // Add active class to the tapped item
+          item.classList.add("active");
         });
+      });
     </script>
-</body>
+    <script>
+      // Get visitor count from local storage
+      let count = localStorage.getItem("visitorCount");
+
+      if (!count) {
+        count = 1; // Set to 1 for the first visit
+      } else {
+        count = parseInt(count) + 1;
+      }
+
+      localStorage.setItem("visitorCount", count);
+      document.getElementById("visitor-count").textContent = count;
+    </script>
+  </body>
 </html>
